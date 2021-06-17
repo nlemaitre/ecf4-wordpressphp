@@ -9,11 +9,11 @@
 
 <div class="fnews intro text-center">
 
-	<p style="zara; font-size: 30px;">
+	<p style="font-family: zara; font-size: 30px;">
 		Welcome to "The Country Newspaper" ! You will find all news on culture and sport
 	</p>
 
-	<h1 style="zara; font-weight:500; font-size: 150px;">First News</h1><br></hr>
+	<h1 style="font-family: zara; font-weight:500; font-size: 150px;">First News</h1><br></hr>
 
 </div>
 
@@ -23,7 +23,7 @@
 
 	<?php $post = array('posts_per_page' => 1, 'order' => 'DESC'); ?>
 
-	<?php $resp = NEW WP_Query( $post ); ?>
+	<?php $resp = NEW WP_Query( $post ); ?> 
 
 	<div>
 
@@ -31,27 +31,24 @@
 
 		<div class="col">
 			
-				<article class="post">
-					<div class="card-body">
+			<div class="card-body">
 
-						<h4 class="card-title" style="font-family:'Source Serif Pro', serif; font-weight:bold;"><?php the_title(); ?></h4>
+				<h4 class="card-title" style="font-family:'Source Serif Pro', serif; font-weight:bold;"><?php the_title(); ?></h4>
 
-						<?php if ( has_post_thumbnail() ) { ?>
+				<?php if ( has_post_thumbnail() ) { ?>
 
-						<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail(); ?>
 
-						<p class="card-text post__meta" style="font-family:Arial;">
-						Published <?php the_time(get_option('date_format')); ?>
-						by <?php the_author(); ?> • <?php comments_number(); ?>
-						</p>
-						<?php } ?>
+				<p class="card-text post__meta" style="font-family: zara;">
+				Published <?php the_time(get_option('date_format')); ?>
+				by <?php the_author(); ?>
+				</p>
+				<?php } ?>
 
-						<div style="font-family:'Source Serif Pro', serif; font-size: 18px;"><?php the_excerpt(); ?></div>
+				<div style="font-family: zara; font-size: 18px;"><?php the_excerpt(); ?></div>
 
-						<p><a href="<?php the_permalink(); ?>" class="btn btn-success post__link">Read More</a></p>
-					</div>
-				</article>
-			
+				<p><a href="<?php the_permalink(); ?>" class="btn btn-success post__link">Read More</a></p>
+			</div>
 		</div>
 
 		<?php endwhile; ?>

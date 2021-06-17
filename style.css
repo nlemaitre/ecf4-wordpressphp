@@ -27,11 +27,11 @@ h2 {
 }
 
 .intro {
-    color: aliceblue;
+    color: rgb(211, 220, 228);
     width: 100%;
     height: 16.8rem;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.76);
+    background: rgba(0, 0, 0, 0.904);
 }
 
 .img-fluid {
@@ -53,6 +53,10 @@ h2 {
     flex-flow: row nowrap;
     justify-content: space-around;
     font-size: 20px;
+}
+
+.allForYou {
+    text-align: center;
 }
 
 a {

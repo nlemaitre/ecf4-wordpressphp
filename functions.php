@@ -21,19 +21,18 @@ function nl_create_post_type() {
     $labels = array (
     'name' => 'Events',
     'singular_name' => 'Event',
-    'add_new' => 'Add New Event',
-    'add_new_item' => 'Add New Event',
-    'edit_item' => 'Edit Event',
-    'new_item' => 'New Event',
-    'all_items' => 'All Event',
-    'view_item' => 'View Event',
-    'search_items' => 'Search Event',
+    'add_new' => 'Add New ',
+    'add_new_event' => 'Add a New Event',
+    'edit_event' => 'Edit a Event',
+    'search_event' => 'Search a Event',
+    'new_event' => 'New Event',
+    'view_event' => 'View a Event',
+    'all_event' => 'All the Events',
     'not_found' => 'No one Event Founded',
     'not_found_in_trash' => 'No one Event founded in Trash',
-    'parent_item_colon' => '',
+    'parent_event' => '',
     'menu_name' => 'Event',
     );
-
     register_post_type ( 'event', array(
     'labels' => $labels,
     'has_archive' => true,
@@ -46,14 +45,12 @@ function nl_create_post_type() {
     )
     );
 }
-
 add_action( 'init', 'nl_create_post_type' );
 
-
 register_sidebar( array(
-    'name' => __( 'In Header Widget Area', 'rmccollin' ),
+    'name' => __( 'headerWidget', 'rmcWid' ),
     'id' => 'in-header-widget-area',
-    'description' => __( 'A widget area located to the right hand side of the header, next to the site title and description.', 'rmccollin' ),
+    'description' => __( '', 'rmcWid' ),
     'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
     'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
