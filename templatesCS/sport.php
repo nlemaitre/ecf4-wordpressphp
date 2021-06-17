@@ -14,7 +14,7 @@ get_header();
 
 <div class="container p-3 mb-3">
 
-    <h2>Fan of Sport, that's for YOU !</h2>
+    <h2 class="CSAll">Fan of Sport, that's for YOU !</h2><hr class="hrStyle">
     <?php $post = array('category_name' => 'sport', 'order' => 'DESC'); ?>
     <?php $resp = new WP_Query( $post ); ?>
 

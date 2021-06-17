@@ -8,7 +8,7 @@ get_header();
 
 <div class="container">
 
-    <h1 class="allForYou mb-6"> All that for you ! </h1><hr class="hrStyle">
+    <h1 class="CSAll mb-6"> All that for you ! </h1><hr class="hrStyle">
 
     <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
     

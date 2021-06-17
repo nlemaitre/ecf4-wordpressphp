@@ -13,7 +13,7 @@ get_header();
 
 <div class="container p-3 mb-3">
 
-    <h2>Culture to you !</h2>
+    <h2 class="CSAll">Culture to you !</h2><hr class="hrStyle">
     <?php $post = array('category_name' => 'culture', 'order' => 'DESC'); ?>
     <?php $resp = new WP_Query( $post ); ?>
 
