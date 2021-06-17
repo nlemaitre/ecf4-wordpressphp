@@ -16,7 +16,7 @@
 <div class="fnews intro text-center">
 
 	<p style="font-family: zara; font-size: 30px;">
-		Welcome to "The Country Newspaper" ! You will find all news on culture and sport
+		Welcome to "The Country Newspaper" ! You will find all news on culture, sport and other !!
 	</p>
 
 	<h1 style="font-family: zara; font-weight:500; font-size: 150px;">First News</h1><br></hr>
