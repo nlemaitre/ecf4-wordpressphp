@@ -1,3 +1,8 @@
+<?php 
+/*
+* Template Name: culture
+*/
+?>
 
 <?php 
 
@@ -29,7 +34,7 @@ get_header();
 
                             <p class="card-text post__meta" style="font-family:Arial;">
                                 Published <?php the_time(get_option('date_format')); ?>
-                                by <?php the_author(); ?> • <?php comments_number(); ?>
+                                by <?php the_author(); ?>
                             </p>
 
                             <div style="font-family:'Source Serif Pro', serif; font-size: 18px;">
@@ -40,8 +45,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-        <?php endwhile;
-        endif; ?>
+        <?php endwhile; endif; ?>
     </div>
 </div>
 <?php get_footer(); ?>

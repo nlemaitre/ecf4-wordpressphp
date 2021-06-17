@@ -1,4 +1,10 @@
 
+<?php
+/*
+* Template Name: front-page
+*/
+?>
+
 <?php 
 
 	/* Front-Page template */
