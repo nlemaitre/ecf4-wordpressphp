@@ -57,6 +57,6 @@ register_sidebar( array(
     'after_title' => '</h3>',
    ) );
 
-function my_theme_styles() {wp_enqueue_style( 'icons' );    }
+function my_theme_styles() { wp_enqueue_style( 'icons' );    }
 
 remove_action("wp_head", "wp_generator");
